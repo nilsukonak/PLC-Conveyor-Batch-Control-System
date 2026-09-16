@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PLC Conveyor Batch Control</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>PLC Conveyor Batch Control System</h1>
+            <h1>IEC 61131-3 Control Logic Simulation</h1>
+        </header>
+
+        <div class="controls">
+            <button id="startBtn" class="start">Start</button>
+            <button id="stopBtn" class="stop">Stop</button>
+            <button id="resetBtn" class="reset">Reset</button>
+        </div>
+
+
+        <div class="machine">
+
+            <div class="machine-title">
+                CONVEYOR LINE
+            </div>
+
+            <div class="simulation">
+
+
+                <div id="product" class="product">
+                    📦
+                </div>
+                <div class="sensor">
+
+                    <div id="sensorHead" class="sensor-head">
+                    </div>
+
+                    <div class="sensor-beam"></div>
+
+
+
+                </div>
+                <div id="pusher" class="pusher">
+
+                    <div class="pusher-body">
+                        PUSHER
+                    </div>
+
+                    <div class="pusher-arm"></div>
+
+                </div>
+                <div class="conveyor">
+
+                    <div class="belt"></div>
+
+                    <div class="rollers">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="dashboard">
+
+            <div class="status-card">
+                <span>SYSTEM</span>
+                <strong id="systemStatus">
+                    STOPPED
+                </strong>
+            </div>
+
+            <div class="status-card">
+                <span>CONVEYOR</span>
+                <strong id="conveyorStatus">
+                    OFF
+                </strong>
+            </div>
+
+            <div class="status-card">
+                <span>PUSHER</span>
+                <strong id="pusherStatus">
+                    OFF
+                </strong>
+            </div>
+
+            <div class="status-card">
+                <span>STATE</span>
+                <strong id="stateStatus">
+                    IDLE
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="counter-panel">
+
+            <span>PRODUCT COUNT</span>
+
+            <div class="counter">
+
+                <strong id="productCount">
+                    0
+                </strong>
+
+                <small>/ 10</small>
+
+            </div>
+
+            <div class="progress">
+
+                <div id="progressBar"></div>
+
+            </div>
+
+        </div>
+
+        <div id="batchComplete" class="batch-complete">
+
+            BATCH COMPLETE
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
