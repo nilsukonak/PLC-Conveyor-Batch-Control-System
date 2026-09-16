@@ -423,15 +423,15 @@ Next product / Batch Complete
 
 ### PLC Simulation
 
-![PLC Simulation](docs/plc-simulation.png)
+![PLC Simulation](docs/plc-simulation.jpeg)
 
 ### Web Visualization
 
-![Web Visualization](docs/web-simulation.png)
+![Web Visualization](docs/web-simulation.jpeg)
 
 ### Batch Complete
 
-![Batch Complete](docs/batch-complete.png)
+![Batch Complete](docs/batch-complete.jpeg)
 
 ---
 
